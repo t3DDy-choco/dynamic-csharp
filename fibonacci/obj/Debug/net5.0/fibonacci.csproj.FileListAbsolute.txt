@@ -1,0 +1,16 @@
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.exe
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.deps.json
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.runtimeconfig.json
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.runtimeconfig.dev.json
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.dll
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\ref\fibonacci.dll
+D:\Workspaces\dynamic-csharp\fibonacci\bin\Debug\net5.0\fibonacci.pdb
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.csprojAssemblyReference.cache
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.AssemblyInfoInputs.cache
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.AssemblyInfo.cs
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.csproj.CoreCompileInputs.cache
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.dll
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\ref\fibonacci.dll
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.pdb
+D:\Workspaces\dynamic-csharp\fibonacci\obj\Debug\net5.0\fibonacci.genruntimeconfig.cache
