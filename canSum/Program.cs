@@ -30,9 +30,13 @@ namespace canSum
 
         public static void PrintValues(ArrayList myList)
         {
-            if (myList == null) ;
-            else foreach (int obj in myList)
+            if (myList != null)
+            {
+                foreach (int obj in myList)
+                {
                     Console.Write("   {0}", obj);
+                }
+            }
             Console.WriteLine();
         }
 
