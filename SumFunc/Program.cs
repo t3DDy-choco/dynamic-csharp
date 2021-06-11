@@ -21,15 +21,15 @@ namespace SumFunc
             int[] a3 = { 2, 4 };
             int[] a4 = { 2, 3, 5 };
             int[] a5 = { 7, 14 };
-            Console.Write(CanSum.canSum(7, a1) + ": "); 
+            Console.Write(CanSum.canSum(7, a1) + ": ");
             PrintValues(HowSum.howSum(7, a1));
-            Console.Write(CanSum.canSum(7, a2) + ": "); 
+            Console.Write(CanSum.canSum(7, a2) + ": ");
             PrintValues(HowSum.howSum(7, a2));
-            Console.Write(CanSum.canSum(7, a3) + ": "); 
+            Console.Write(CanSum.canSum(7, a3) + ": ");
             PrintValues(HowSum.howSum(7, a3));
-            Console.Write(CanSum.canSum(8, a4) + ": "); 
+            Console.Write(CanSum.canSum(8, a4) + ": ");
             PrintValues(HowSum.howSum(8, a4));
-            Console.Write(CanSum.canSum_memo(300, a5, _memo) + ": "); 
+            Console.Write(CanSum.canSum_memo(300, a5, _memo) + ": ");
             PrintValues(HowSum.howSum_memo(300, a5, _memo2));
         }
 
