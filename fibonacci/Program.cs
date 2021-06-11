@@ -5,7 +5,7 @@ namespace fibonacci
 {
     class Program
     {
-        static Dictionary<int, long> memo = new Dictionary<int, long>() {
+        static Dictionary<int, ulong> memo = new Dictionary<int, ulong>() {
             {0, 0},
             {1, 1},
             {2, 1}
@@ -23,7 +23,7 @@ namespace fibonacci
             return old_fib(n - 1) + old_fib(n - 2);
         }
 
-        static long memo_fib(int n, Dictionary<int, long> memo)
+        static ulong memo_fib(int n, Dictionary<int, ulong> memo)
         {
             if (memo.ContainsKey(n)) return memo[n];
             else memo.Add(n, memo_fib(n - 1, memo) + memo_fib(n - 2, memo));
