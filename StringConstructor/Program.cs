@@ -13,7 +13,7 @@ namespace StringConstructor
         };
 
         static List<string> s1 = new List<string>() {
-            "ab", "abc", "cd", "def", "abcd"
+            "ab", "abc", "cd", "def", "abcd", "ef", "c"
         };
 
         static List<string> s2 = new List<string>() {

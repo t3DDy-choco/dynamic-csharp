@@ -18,11 +18,11 @@ namespace StringConstructor
                 {
                     string suffix = target.Substring(word.Length);
                     List<List<string>> waysToTarget = allConstruct(suffix, wordBank);
-                    foreach (List<string> s in waysToTarget) 
+                    waysToTarget.ForEach(s => 
                     {
                         s.Insert(0, word);
                         result.Add(s);
-                    }
+                    });
                 }
             }
             
