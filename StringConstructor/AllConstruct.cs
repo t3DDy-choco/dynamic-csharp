@@ -27,9 +27,31 @@ namespace StringConstructor
             }
             
             return result;
-        }
+        } 
 
-        public static void allConstruct_memo() {}
+        public static List<List<string>> allConstruct_memo(string target, List<string> wordBank, Dictionary<string, List<List<string>>> memo) 
+        {
+            if (memo.ContainsKey(target)) return memo[target];
+
+            List<List<string>> result = new List<List<string>>();
+
+            foreach (string word in wordBank)
+            {
+                if (target.IndexOf(word) == 0) 
+                {
+                    string suffix = target.Substring(word.Length);
+                    List<List<string>> waysToTarget = allConstruct_memo(suffix, wordBank, memo);
+                    waysToTarget.ForEach(s => 
+                    {
+                        s.Insert(0, word);
+                        result.Add(s);
+                    });
+                }
+            }
+            
+            memo.Add(target, result);
+            return result;
+        }
 
         public static string printer(List<List<string>> arr) {
             string result = "";
