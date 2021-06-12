@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using static StringConstructor.CanConstruct;
 using static StringConstructor.CountConstruct;
+using static StringConstructor.AllConstruct;
 
 namespace StringConstructor
 {
@@ -29,11 +30,15 @@ namespace StringConstructor
 
         static void Main(string[] args)
         {
-            Console.WriteLine(canConstruct("purple", s0) + ": " + countConstruct("purple", s0));
-            Console.WriteLine(canConstruct("abcdef", s1) + ": " + countConstruct("abcdef", s1));
-            Console.WriteLine(canConstruct("skateboard", s2) + ": " + countConstruct("skateboard", s2));
-            Console.WriteLine(canConstruct("enterapotentpot", s3) + ": " + countConstruct("enterapotentpot", s3));
-            Console.WriteLine(canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4) + ": " + countConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
+            runner("purple", s0);
+            runner("abcdef", s1);
+            runner("skateboard", s2);
+            runner("enterapotentpot", s3);
+            runner("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4);
+        }
+
+        static void runner(string s, List<string> list) {
+            Console.WriteLine(canConstruct(s, list) + ":\t" + countConstruct(s, list) + ":\t" + printer(allConstruct(s, list)));
         }
     }
 }
