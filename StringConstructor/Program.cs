@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using static StringConstructor.CanConstruct;
+using static StringConstructor.CountConstruct;
 
 namespace StringConstructor
 {
     class Program
     {
+        static List<string> s0 = new List<string>() {
+            "purp", "p", "ur", "le", "purpl"
+        };
+
         static List<string> s1 = new List<string>() {
             "ab", "abc", "cd", "def", "abcd"
         };
@@ -23,10 +29,11 @@ namespace StringConstructor
 
         static void Main(string[] args)
         {
-            Console.WriteLine(CanConstruct.canConstruct("abcdef", s1));
-            Console.WriteLine(CanConstruct.canConstruct("skateboard", s2));
-            Console.WriteLine(CanConstruct.canConstruct("enterapotentpot", s3));
-            Console.WriteLine(CanConstruct.canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
+            Console.WriteLine(canConstruct("purple", s0) + ": " + countConstruct("purple", s0));
+            Console.WriteLine(canConstruct("abcdef", s1) + ": " + countConstruct("abcdef", s1));
+            Console.WriteLine(canConstruct("skateboard", s2) + ": " + countConstruct("skateboard", s2));
+            Console.WriteLine(canConstruct("enterapotentpot", s3) + ": " + countConstruct("enterapotentpot", s3));
+            Console.WriteLine(canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4) + ": " + countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
         }
     }
 }
