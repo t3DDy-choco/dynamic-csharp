@@ -5,6 +5,11 @@ namespace tableMod {
         static void Main(string[] args) {
             Console.WriteLine(fib(50));
             Console.WriteLine(grid(18, 18));
+            Console.WriteLine(canSum(7, new int[] {2, 3}));
+            Console.WriteLine(canSum(7, new int[] {5, 3, 4, 7}));
+            Console.WriteLine(canSum(7, new int[] {2, 4}));
+            Console.WriteLine(canSum(8, new int[] {2, 3, 5}));
+            Console.WriteLine(canSum(300, new int[] {7, 14}));
         }
 
         static long fib(int n) {
@@ -34,18 +39,37 @@ namespace tableMod {
             return table[m,n];
         }
 
+        static bool canSum(int n, int[] list) {
+            bool[] table = new bool[n + 1];
+            for (int i = 1; i <= n; i++) table[i] = false;
+            table[0] = true;
+
+            for (int i = 0; i < n; i++) {
+                if (table[i] == true) {
+                    foreach (int x in list)
+                    {
+                        if (i + x <= n) table[i + x] = true;
+                    }
+                }
+            }
+
+            return table[n];
+        }
+
         static void print(int[] arr) { 
             foreach (int n in arr) Console.Write($"{n},"); 
         }
+
+        static void print(bool[] arr) { 
+            foreach (bool n in arr) Console.Write($"{n},"); 
+        }
+
         static void print(long[,] arr) {
             for (int i = 0; i < arr.GetLength(0); i++) {
                 for (int j = 0; j < arr.GetLength(1); j++)
                     Console.Write($"{arr[i,j]},"); 
                 Console.WriteLine();
             }
-                
-                
-
         }
     }
 }
