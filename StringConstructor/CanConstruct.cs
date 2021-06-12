@@ -31,12 +31,13 @@ namespace StringConstructor
                     string suffix = target.Substring(word.Length);
                     if (canConstruct_memo(suffix, wordBank)) {
                         memo.Add(target, true);
+                        return true;
                     }
                 }
             }
 
             memo.Add(target, false);
-            return memo[target];
+            return false;
         }
     }
 }
