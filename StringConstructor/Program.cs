@@ -33,7 +33,7 @@ namespace StringConstructor
             Console.WriteLine(canConstruct("abcdef", s1) + ": " + countConstruct("abcdef", s1));
             Console.WriteLine(canConstruct("skateboard", s2) + ": " + countConstruct("skateboard", s2));
             Console.WriteLine(canConstruct("enterapotentpot", s3) + ": " + countConstruct("enterapotentpot", s3));
-            Console.WriteLine(canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4) + ": " + countConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
+            Console.WriteLine(canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4) + ": " + countConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
         }
     }
 }
