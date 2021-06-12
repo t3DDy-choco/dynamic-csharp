@@ -26,7 +26,7 @@ namespace StringConstructor
             Console.WriteLine(CanConstruct.canConstruct("abcdef", s1));
             Console.WriteLine(CanConstruct.canConstruct("skateboard", s2));
             Console.WriteLine(CanConstruct.canConstruct("enterapotentpot", s3));
-            Console.WriteLine(CanConstruct.canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
+            Console.WriteLine(CanConstruct.canConstruct_memo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeef", s4));
         }
     }
 }
